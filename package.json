@@ -1,0 +1,19 @@
+{
+  "name": "range-set",
+  "version": "0.0.0",
+  "description": "int set made of ranges",
+  "main": "range-set.js",
+  "scripts": {
+    "test": "NODE_ENV=test istanbul cover _mocha -- --reporter spec --ui bdd --slow 10 --check-leaks",
+    "watch": "NODE_ENV=test mocha --watch --reporter min --ui bdd --slow 10 --check-leaks",
+    "clean": "rm -rf coverage"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "should": "~2.1.0",
+    "istanbul": "~0.1.44"
+  }
+}
